@@ -8,6 +8,12 @@
 
 #import "ViewController.h"
 
+#import "Masonry.h"
+
+#import "OpenUDID.h"
+
+#import <AdSupport/AdSupport.h>
+
 @interface ViewController ()
 
 @end
@@ -17,6 +23,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UILabel *label = [[UILabel alloc] init];
+    label.textColor = [UIColor blueColor];
+    label.numberOfLines = 3;
+    [self.view addSubview:label];
+    [label mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self.view);
+        make.center.equalTo(self.view);
+    }];
+
+    label.text = [[[UIDevice currentDevice] identifierForVendor] UUIDString];
+    
 }
 
 

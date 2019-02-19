@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FEBED44AD004DCBCF9BD1D3 /* libPods-UUID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F74E693ECE09579BF1D040 /* libPods-UUID.a */; };
 		81ACA0EB221BAF7400BB5AF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ACA0EA221BAF7400BB5AF3 /* AppDelegate.m */; };
 		81ACA0EE221BAF7400BB5AF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ACA0ED221BAF7400BB5AF3 /* ViewController.m */; };
 		81ACA0F1221BAF7400BB5AF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81ACA0EF221BAF7400BB5AF3 /* Main.storyboard */; };
 		81ACA0F3221BAF7500BB5AF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81ACA0F2221BAF7500BB5AF3 /* Assets.xcassets */; };
 		81ACA0F6221BAF7500BB5AF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81ACA0F4221BAF7500BB5AF3 /* LaunchScreen.storyboard */; };
 		81ACA0F9221BAF7500BB5AF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ACA0F8221BAF7500BB5AF3 /* main.m */; };
+		81ACA104221BCA5500BB5AF3 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = 81ACA102221BCA5400BB5AF3 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81ACA10D221BCBEA00BB5AF3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 81ACA10C221BCBEA00BB5AF3 /* Podfile */; };
+		81ACA110221BE4C200BB5AF3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81ACA10F221BE4C200BB5AF3 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81ACA0E6221BAF7400BB5AF3 /* UUID.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUID.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0A7972A88974915CD51127 /* Pods-UUID.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUID.release.xcconfig"; path = "Target Support Files/Pods-UUID/Pods-UUID.release.xcconfig"; sourceTree = "<group>"; };
+		81ACA0E6221BAF7400BB5AF3 /* UUID02.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UUID02.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81ACA0E9221BAF7400BB5AF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		81ACA0EA221BAF7400BB5AF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		81ACA0EC221BAF7400BB5AF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -26,6 +31,13 @@
 		81ACA0F5221BAF7500BB5AF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81ACA0F7221BAF7500BB5AF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81ACA0F8221BAF7500BB5AF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		81ACA102221BCA5400BB5AF3 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		81ACA103221BCA5400BB5AF3 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
+		81ACA10C221BCBEA00BB5AF3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		81ACA10E221BD85900BB5AF3 /* UUID.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UUID.entitlements; sourceTree = "<group>"; };
+		81ACA10F221BE4C200BB5AF3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		9ACFA9B9083CFFFACF3D1F29 /* Pods-UUID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UUID.debug.xcconfig"; path = "Target Support Files/Pods-UUID/Pods-UUID.debug.xcconfig"; sourceTree = "<group>"; };
+		D4F74E693ECE09579BF1D040 /* libPods-UUID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UUID.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,24 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81ACA110221BE4C200BB5AF3 /* Security.framework in Frameworks */,
+				7FEBED44AD004DCBCF9BD1D3 /* libPods-UUID.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		606930D418A22019F7FA962C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ACFA9B9083CFFFACF3D1F29 /* Pods-UUID.debug.xcconfig */,
+				7D0A7972A88974915CD51127 /* Pods-UUID.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		81ACA0DD221BAF7400BB5AF3 = {
 			isa = PBXGroup;
 			children = (
 				81ACA0E8221BAF7400BB5AF3 /* UUID */,
 				81ACA0E7221BAF7400BB5AF3 /* Products */,
+				606930D418A22019F7FA962C /* Pods */,
+				D79EFEE52FA28EAC9C3B2825 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		81ACA0E7221BAF7400BB5AF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				81ACA0E6221BAF7400BB5AF3 /* UUID.app */,
+				81ACA0E6221BAF7400BB5AF3 /* UUID02.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +83,10 @@
 		81ACA0E8221BAF7400BB5AF3 /* UUID */ = {
 			isa = PBXGroup;
 			children = (
+				81ACA10E221BD85900BB5AF3 /* UUID.entitlements */,
+				81ACA10C221BCBEA00BB5AF3 /* Podfile */,
+				81ACA103221BCA5400BB5AF3 /* OpenUDID.h */,
+				81ACA102221BCA5400BB5AF3 /* OpenUDID.m */,
 				81ACA0E9221BAF7400BB5AF3 /* AppDelegate.h */,
 				81ACA0EA221BAF7400BB5AF3 /* AppDelegate.m */,
 				81ACA0EC221BAF7400BB5AF3 /* ViewController.h */,
@@ -71,6 +100,15 @@
 			path = UUID;
 			sourceTree = "<group>";
 		};
+		D79EFEE52FA28EAC9C3B2825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81ACA10F221BE4C200BB5AF3 /* Security.framework */,
+				D4F74E693ECE09579BF1D040 /* libPods-UUID.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 81ACA0FC221BAF7500BB5AF3 /* Build configuration list for PBXNativeTarget "UUID" */;
 			buildPhases = (
+				267DBD7DCE7C8700A41A1DCD /* [CP] Check Pods Manifest.lock */,
 				81ACA0E2221BAF7400BB5AF3 /* Sources */,
 				81ACA0E3221BAF7400BB5AF3 /* Frameworks */,
 				81ACA0E4221BAF7400BB5AF3 /* Resources */,
@@ -88,7 +127,7 @@
 			);
 			name = UUID;
 			productName = UUID;
-			productReference = 81ACA0E6221BAF7400BB5AF3 /* UUID.app */;
+			productReference = 81ACA0E6221BAF7400BB5AF3 /* UUID02.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +141,14 @@
 				TargetAttributes = {
 					81ACA0E5221BAF7400BB5AF3 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -130,11 +177,37 @@
 			files = (
 				81ACA0F6221BAF7500BB5AF3 /* LaunchScreen.storyboard in Resources */,
 				81ACA0F3221BAF7500BB5AF3 /* Assets.xcassets in Resources */,
+				81ACA10D221BCBEA00BB5AF3 /* Podfile in Resources */,
 				81ACA0F1221BAF7400BB5AF3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		267DBD7DCE7C8700A41A1DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UUID-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		81ACA0E2221BAF7400BB5AF3 /* Sources */ = {
@@ -142,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81ACA0EE221BAF7400BB5AF3 /* ViewController.m in Sources */,
+				81ACA104221BCA5500BB5AF3 /* OpenUDID.m in Sources */,
 				81ACA0F9221BAF7500BB5AF3 /* main.m in Sources */,
 				81ACA0EB221BAF7400BB5AF3 /* AppDelegate.m in Sources */,
 			);
@@ -220,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -273,7 +347,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,34 +357,38 @@
 		};
 		81ACA0FD221BAF7500BB5AF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ACFA9B9083CFFFACF3D1F29 /* Pods-UUID.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UUID/UUID.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 28Z3NQ8CYP;
+				DEVELOPMENT_TEAM = TT6F2DSJWV;
 				INFOPLIST_FILE = UUID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhitian.UUID;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhitian02.UUID02;
+				PRODUCT_NAME = UUID02;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		81ACA0FE221BAF7500BB5AF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0A7972A88974915CD51127 /* Pods-UUID.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = UUID/UUID.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 28Z3NQ8CYP;
+				DEVELOPMENT_TEAM = TT6F2DSJWV;
 				INFOPLIST_FILE = UUID/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zhitian.UUID;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhitian02.UUID02;
+				PRODUCT_NAME = UUID02;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
